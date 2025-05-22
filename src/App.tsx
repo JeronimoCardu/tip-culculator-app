@@ -10,15 +10,19 @@ export default function App() {
 
   return (
     <>
-      <img className="mx-auto my-12" src="/images/logo.svg" alt="splitter" />
-      <section className="tablet:w-18/20 desktop:p-[2rem] desktop:w-5/10 desktop:grid desktop:grid-cols-2 desktop:gap-[4rem] tablet:mx-auto tablet:rounded-[1.5rem] tablet:p-[3rem_5rem] h-fit rounded-[1.5rem_1.5rem_0_0] bg-white p-[2rem_1.5rem]">
-        <div>
+      <img
+        className="desktop:my-24 mx-auto my-12"
+        src="/images/logo.svg"
+        alt="splitter"
+      />
+      <section className="tablet:w-18/20 tablet:shadow-[0px_32px_43px_rgba(79,166,175,0.20)] desktop:p-[2rem] desktop:w-5/10 desktop:grid desktop:grid-cols-2 desktop:gap-[4rem] tablet:mx-auto tablet:rounded-[1.5rem] tablet:p-[3rem_5rem] h-fit rounded-[1.5rem_1.5rem_0_0] bg-white p-[2rem_1.5rem]">
+        <div className="desktop:py-4">
           <Input setBill={setBill} inputType={"bill"} />
           <div className="my-[2rem]">
             <h3 className="textPreset5 mb-[.5rem] text-gray-500">
               Select Tip %
             </h3>
-            <div className="grid tablet:grid-cols-3 grid-cols-2 gap-[1rem]">
+            <div className="tablet:grid-cols-3 grid grid-cols-2 gap-[1rem]">
               <TipButton tip={tip} setTip={setTip}>
                 5
               </TipButton>
