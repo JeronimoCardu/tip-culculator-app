@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: monoBold;
+  src: url(../public/fonts/SpaceMono-Bold.ttf);
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: monoBold;
+  background: var(--color-gray-200);
+}
+
+@theme {
+  --color-gray-600: #3d6666;
+  --color-gray-550: #547878;
+  --color-gray-500: #5e7a7d;
+  --color-gray-400: #7f9d9f;
+  --color-gray-300: #9ebbbd;
+  --color-gray-200: #c5e4e7;
+  --color-gray-50: #f3f9fa;
+
+  --color-green-900: #00474b;
+  --color-green-800: #085c61;
+  --color-green-750: #0d686d;
+  --color-green-400: #26c2ae;
+  --color-green-200: #9fe8df;
+
+  --color-orange: #e17052;
+
+  --breakpoint-tablet: 48rem;
+  --breakpoint-desktop: 90rem;
+}
+
+@layer base {
+  .textPreset1 {
+    font-size: 3rem;
+    line-height: 4.4375rem;
+    letter-spacing: -1px;
+  }
+  .textPreset2 {
+    font-size: 2rem;
+    line-height: 2.9375rem;
+    letter-spacing: -0.67px;
+  }
+  .textPreset3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .textPreset4 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  .textPreset5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .textPreset6 {
+    font-size: 0.8125rem;
+    line-height: 1.1875rem;
+  }
+}
+
+/* REMOVE ARROWS INPUT NUMBER*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
